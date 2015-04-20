@@ -1,6 +1,4 @@
-# GetClean
-Getting and cleaning data, course project
-
+# Getting and cleaning data, course project
 
 This repository contains the R code and the code book for the Coursera course "Getting and Cleaning data".
 The dataset used in the project is "Human Activity Recognition Using Smartphones".
