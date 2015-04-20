@@ -4,30 +4,25 @@ The original dataset is described in http://archive.ics.uci.edu/ml/datasets/Huma
 
 The zip-file which we had to download includes the following files:
 
-'README.txt': 
+'README.txt': contains the general information about all the data in the zip-file
 
-'features_info.txt': Shows information about the variables used on the feature vector.
+'features_info.txt': contains the general information about the features.
 
-'features.txt': List of all features.
+'features.txt': contains the full list of all features.
 
-'activity_labels.txt': Links the class labels with their activity name.
+'activity_labels.txt': contains the list of activity labels.
 
-'X_train.txt': Training set.
+'X_train.txt': contains training set.
 
-'y_train.txt': Training labels.
+'y_train.txt': contains training labels.
 
-'X_test.txt': Test set.
+'X_test.txt': contains test set.
 
-'y_test.txt': Test labels.
+'y_test.txt': contains test labels.
 
-The following files are available for the train and test data. Their descriptions are equivalent.
+'subject_train.txt'/'subject_test.txt': contains the subjects who performed the activity for each window sample. 
 
-'subject_train.txt': Each row identifies the subject who performed the activity for each window sample. 
-Its range is from 1 to 30.
-
-'total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis 
-in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 
-'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+'total_acc_x_train.txt'/'total_acc_x_test.txt', 'total_acc_y_train.txt'/'total_acc_y_test.txt', 'total_acc_z_train.txt'/'total_acc_z_test.txt': contains the acceleration signals from the smartphone accelerometer in 'g' units, for x-, y- and z-axis.
 
 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting 
 the gravity from the total acceleration.
