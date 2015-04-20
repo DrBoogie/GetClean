@@ -16,11 +16,11 @@ subject_test <- read.table("C:\\Users\\D_und_V\\Documents\\MATLAB\\GetClean\\sub
 features <- read.table("C:\\Users\\D_und_V\\Documents\\MATLAB\\GetClean\\features.txt")
 activities <- read.table("C:\\Users\\D_und_V\\Documents\\MATLAB\\GetClean\\activity_labels.txt")
 
-# create 'x_data' and 'y_data'
+# create 'x_data' and 'y_data' through the merge of corresponding original data
 x_data <- rbind(x_train, x_test)
 y_data <- rbind(y_train, y_test)
 
-# create 'subject_data'
+# create 'subject_data' through the merge of corresponding original data
 subject_data <- rbind(subject_train, subject_test)
 
 # Step 2
