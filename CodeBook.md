@@ -2,7 +2,7 @@
 
 The original dataset is described in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
-# Description of the orginal data
+# Description of the original data
 
 The zip-file which we had to download includes the following files:
 
@@ -14,11 +14,11 @@ The zip-file which we had to download includes the following files:
 
 'activity_labels.txt': contains the list of activity labels.
 
-'X_train.txt': contains training set.
+'x_train.txt': contains training set.
 
 'y_train.txt': contains training labels.
 
-'X_test.txt': contains test set.
+'x_test.txt': contains test set.
 
 'y_test.txt': contains test labels.
 
@@ -34,6 +34,14 @@ for each window sample, for x-, y- and z-axis.
 
 # Description of the created data 
 
+'x_data': 'x_train' and 'x_test' together (added through rbind)
 
+'y_data': 'y_train' and 'y_test' together (added through rbind)
 
+'subject_data': 'subject_train' and 'subject_test' together (added through rbind)
 
+'mean_and_std_features': contains all variable names with 'mean' or 'std' within
+
+'all_data': 'x_data', 'y_data' and 'subject_data' merged together (trough cbind)
+
+'data': the end data, tidy data set, created with write.table().
