@@ -16,37 +16,35 @@ subject_test <- read.table("C:\\Users\\D_und_V\\Documents\\MATLAB\\GetClean\\sub
 features <- read.table("C:\\Users\\D_und_V\\Documents\\MATLAB\\GetClean\\features.txt")
 activities <- read.table("C:\\Users\\D_und_V\\Documents\\MATLAB\\GetClean\\activity_labels.txt")
 
-# create 'x_data' and 'y_data' through the merge of corresponding original data
+# create 'x_data' and 'y_data' by adding of corresponding original data
 x_data <- rbind(x_train, x_test)
 y_data <- rbind(y_train, y_test)
 
-# create 'subject_data' through the merge of corresponding original data
+# create 'subject_data' through by adding of corresponding original data
 subject_data <- rbind(subject_train, subject_test)
 
 # Step 2
 
 # get columns from 'features' which have mean or std in their names
 mean_and_std_features <- grep("-(mean|std)\\(\\)", features[, 2])
-
-# only the needed columns
 x_data <- x_data[, mean_and_std_features]
 
-# change the column names
+# change the column names of x_data through taking the names from 'features'
 names(x_data) <- features[mean_and_std_features, 2]
 
 # Step 3
 
 
-# update values in 'y_data'
+# update values in 'y_data' 
 y_data[, 1] <- activities[y_data[, 1], 2]
 
-# column names
+# rename the only column of 'y_data' to "activity"
 names(y_data) <- "activity"
 
 # Step 4
 
 
-# column names
+# rename the only column of 'subject_data' to "subject"
 names(subject_data) <- "subject"
 
 # all the data together
