@@ -42,6 +42,6 @@ for each window sample, for x-, y- and z-axis.
 
 'mean_and_std_features': contains all variable names with 'mean' or 'std' within
 
-'all_data': 'x_data', 'y_data' and 'subject_data' merged together (trough cbind)
+'all_data': 'x_data', 'y_data' and 'subject_data' merged together (through cbind)
 
 'data': the end data, tidy data set, created with write.table().
